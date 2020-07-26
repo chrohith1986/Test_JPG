@@ -6,7 +6,7 @@ def call(name) {
     stages {
         stage('Build') {
             steps {
-                echo "Name.. ${name}"
+                echo "Name ---- ${name}"
             }
         }
         stage('Test') {
