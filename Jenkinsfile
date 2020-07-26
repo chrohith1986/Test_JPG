@@ -1,5 +1,4 @@
 @Library('MyLibrary') _
-helloworld.info 'rohith'
 
 pipeline {
     agent any
@@ -8,16 +7,18 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                helloworld.info 'rohith'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                log.message 'Testing..'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                log.message 'Deploying....'
+                helloworld.info 'sukrish'
             }
         }
     }
