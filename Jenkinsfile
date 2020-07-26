@@ -1,3 +1,3 @@
 @Library('MyLibrary') _
 
-log.message 'Deploying....'
+helloworld('Deploying....')
