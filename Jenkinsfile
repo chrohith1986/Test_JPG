@@ -1,4 +1,3 @@
-@Library('MyLibrary') _
 
 helloworld(
   [
