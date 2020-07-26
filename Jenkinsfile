@@ -1,3 +1,7 @@
 @Library('MyLibrary') _
 
-helloworld('Deploying....')
+helloworld(
+  [
+    name:'rohith'
+  ]
+)
