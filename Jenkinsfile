@@ -11,6 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                helloworld.info 'sukrish'
             }
         }
         stage('Test') {
