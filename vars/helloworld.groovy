@@ -1,4 +1,4 @@
-def call() {
+def call(name_org) {
   
   pipeline {
     agent any
@@ -6,7 +6,7 @@ def call() {
     stages {
         stage('Build') {
             steps {
-                echo "Name ---- ${name}"
+                echo "Name ---- ${name_org}"
             }
         }
         stage('Test') {
