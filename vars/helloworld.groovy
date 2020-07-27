@@ -1,4 +1,4 @@
-def call(name) {
+def call() {
   
   pipeline {
     agent any
@@ -11,12 +11,7 @@ def call(name) {
         }
         stage('Test') {
             steps {
-                echo 'ttttttttttt'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'oooooookkkkkkkk'
+                echo '------------- TEST ------------'
             }
         }
     }
